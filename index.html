@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Online Quiz Application</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="quiz-container">
+
+        <!-- START SCREEN -->
+
+        <div id="start-screen">
+
+            <h1>Online Quiz</h1>
+
+            <p>Test Your Computer Knowledge</p>
+
+            <input
+                type="text"
+                id="username"
+                placeholder="Enter your name"
+            >
+
+            <button id="start-btn">
+                Start Quiz
+            </button>
+
+        </div>
+
+
+        <!-- QUIZ SCREEN -->
+
+        <div id="quiz-screen" class="hide">
+
+            <div class="top-section">
+
+                <span id="welcome">
+                    Welcome
+                </span>
+
+                <span id="timer">
+                    Time: 15
+                </span>
+
+            </div>
+
+
+            <div class="progress-container">
+
+                <div id="progress-bar"></div>
+
+            </div>
+
+
+            <p id="question-number">
+                Question 1 of 10
+            </p>
+
+
+            <h2 id="question">
+                Question
+            </h2>
+
+
+            <div id="options">
+
+            </div>
+
+
+            <button id="next-btn">
+                Next Question
+            </button>
+
+        </div>
+
+
+        <!-- RESULT SCREEN -->
+
+        <div id="result-screen" class="hide">
+
+            <h1>Quiz Completed!</h1>
+
+            <h2 id="result-message">
+                Well Done!
+            </h2>
+
+            <div class="result-box">
+
+                <p id="score">
+                    Score: 0 / 10
+                </p>
+
+                <p id="percentage">
+                    Percentage: 0%
+                </p>
+
+            </div>
+
+
+            <button id="restart-btn">
+                Restart Quiz
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
